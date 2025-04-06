@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C3F52CEA2DA26A4A00BBB7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3F52CD12DA26A4900BBB7CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3F52CD82DA26A4900BBB7CE;
+			remoteInfo = Roamly;
+		};
+		C3F52CF42DA26A4A00BBB7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3F52CD12DA26A4900BBB7CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3F52CD82DA26A4900BBB7CE;
+			remoteInfo = Roamly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3F52CD92DA26A4900BBB7CE /* Roamly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roamly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F52CE92DA26A4A00BBB7CE /* RoamlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F52CF32DA26A4A00BBB7CE /* RoamlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C3F52CDB2DA26A4900BBB7CE /* Roamly */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Roamly;
+			sourceTree = "<group>";
+		};
+		C3F52CEC2DA26A4A00BBB7CE /* RoamlyTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RoamlyTests;
+			sourceTree = "<group>";
+		};
+		C3F52CF62DA26A4A00BBB7CE /* RoamlyUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RoamlyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3F52CD62DA26A4900BBB7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F52CE62DA26A4A00BBB7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F52CF02DA26A4A00BBB7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3F52CD02DA26A4900BBB7CE = {
+			isa = PBXGroup;
+			children = (
+				C3F52CDB2DA26A4900BBB7CE /* Roamly */,
+				C3F52CEC2DA26A4A00BBB7CE /* RoamlyTests */,
+				C3F52CF62DA26A4A00BBB7CE /* RoamlyUITests */,
+				C3F52CDA2DA26A4900BBB7CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3F52CDA2DA26A4900BBB7CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3F52CD92DA26A4900BBB7CE /* Roamly.app */,
+				C3F52CE92DA26A4A00BBB7CE /* RoamlyTests.xctest */,
+				C3F52CF32DA26A4A00BBB7CE /* RoamlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3F52CD82DA26A4900BBB7CE /* Roamly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F52CFD2DA26A4A00BBB7CE /* Build configuration list for PBXNativeTarget "Roamly" */;
+			buildPhases = (
+				C3F52CD52DA26A4900BBB7CE /* Sources */,
+				C3F52CD62DA26A4900BBB7CE /* Frameworks */,
+				C3F52CD72DA26A4900BBB7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C3F52CDB2DA26A4900BBB7CE /* Roamly */,
+			);
+			name = Roamly;
+			packageProductDependencies = (
+			);
+			productName = Roamly;
+			productReference = C3F52CD92DA26A4900BBB7CE /* Roamly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3F52CE82DA26A4A00BBB7CE /* RoamlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F52D002DA26A4A00BBB7CE /* Build configuration list for PBXNativeTarget "RoamlyTests" */;
+			buildPhases = (
+				C3F52CE52DA26A4A00BBB7CE /* Sources */,
+				C3F52CE62DA26A4A00BBB7CE /* Frameworks */,
+				C3F52CE72DA26A4A00BBB7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3F52CEB2DA26A4A00BBB7CE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C3F52CEC2DA26A4A00BBB7CE /* RoamlyTests */,
+			);
+			name = RoamlyTests;
+			packageProductDependencies = (
+			);
+			productName = RoamlyTests;
+			productReference = C3F52CE92DA26A4A00BBB7CE /* RoamlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3F52CF22DA26A4A00BBB7CE /* RoamlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F52D032DA26A4A00BBB7CE /* Build configuration list for PBXNativeTarget "RoamlyUITests" */;
+			buildPhases = (
+				C3F52CEF2DA26A4A00BBB7CE /* Sources */,
+				C3F52CF02DA26A4A00BBB7CE /* Frameworks */,
+				C3F52CF12DA26A4A00BBB7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3F52CF52DA26A4A00BBB7CE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C3F52CF62DA26A4A00BBB7CE /* RoamlyUITests */,
+			);
+			name = RoamlyUITests;
+			packageProductDependencies = (
+			);
+			productName = RoamlyUITests;
+			productReference = C3F52CF32DA26A4A00BBB7CE /* RoamlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3F52CD12DA26A4900BBB7CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					C3F52CD82DA26A4900BBB7CE = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					C3F52CE82DA26A4A00BBB7CE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = C3F52CD82DA26A4900BBB7CE;
+					};
+					C3F52CF22DA26A4A00BBB7CE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = C3F52CD82DA26A4900BBB7CE;
+					};
+				};
+			};
+			buildConfigurationList = C3F52CD42DA26A4900BBB7CE /* Build configuration list for PBXProject "Roamly" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3F52CD02DA26A4900BBB7CE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C3F52CDA2DA26A4900BBB7CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3F52CD82DA26A4900BBB7CE /* Roamly */,
+				C3F52CE82DA26A4A00BBB7CE /* RoamlyTests */,
+				C3F52CF22DA26A4A00BBB7CE /* RoamlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3F52CD72DA26A4900BBB7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F52CE72DA26A4A00BBB7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F52CF12DA26A4A00BBB7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3F52CD52DA26A4900BBB7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F52CE52DA26A4A00BBB7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F52CEF2DA26A4A00BBB7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3F52CEB2DA26A4A00BBB7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3F52CD82DA26A4900BBB7CE /* Roamly */;
+			targetProxy = C3F52CEA2DA26A4A00BBB7CE /* PBXContainerItemProxy */;
+		};
+		C3F52CF52DA26A4A00BBB7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3F52CD82DA26A4900BBB7CE /* Roamly */;
+			targetProxy = C3F52CF42DA26A4A00BBB7CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C3F52CFB2DA26A4A00BBB7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3F52CFC2DA26A4A00BBB7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3F52CFE2DA26A4A00BBB7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Roamly/Preview Content\"";
+				DEVELOPMENT_TEAM = CDFCS9TBL9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuteb1t3h.Roamly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3F52CFF2DA26A4A00BBB7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Roamly/Preview Content\"";
+				DEVELOPMENT_TEAM = CDFCS9TBL9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuteb1t3h.Roamly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3F52D012DA26A4A00BBB7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDFCS9TBL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuteb1t3h.RoamlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roamly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roamly";
+			};
+			name = Debug;
+		};
+		C3F52D022DA26A4A00BBB7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDFCS9TBL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuteb1t3h.RoamlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roamly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roamly";
+			};
+			name = Release;
+		};
+		C3F52D042DA26A4A00BBB7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDFCS9TBL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuteb1t3h.RoamlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Roamly;
+			};
+			name = Debug;
+		};
+		C3F52D052DA26A4A00BBB7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDFCS9TBL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuteb1t3h.RoamlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Roamly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3F52CD42DA26A4900BBB7CE /* Build configuration list for PBXProject "Roamly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F52CFB2DA26A4A00BBB7CE /* Debug */,
+				C3F52CFC2DA26A4A00BBB7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3F52CFD2DA26A4A00BBB7CE /* Build configuration list for PBXNativeTarget "Roamly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F52CFE2DA26A4A00BBB7CE /* Debug */,
+				C3F52CFF2DA26A4A00BBB7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3F52D002DA26A4A00BBB7CE /* Build configuration list for PBXNativeTarget "RoamlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F52D012DA26A4A00BBB7CE /* Debug */,
+				C3F52D022DA26A4A00BBB7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3F52D032DA26A4A00BBB7CE /* Build configuration list for PBXNativeTarget "RoamlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F52D042DA26A4A00BBB7CE /* Debug */,
+				C3F52D052DA26A4A00BBB7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3F52CD12DA26A4900BBB7CE /* Project object */;
+}
