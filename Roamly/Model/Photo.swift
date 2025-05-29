@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Photo: Identifiable, Codable {
-    var user_id: Int
+struct Photo: Decodable {
+//    var user_id: Int64
     var media: String
-    var description: String
 }

@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct RoamlyApp: App {
+    @StateObject private var authManager = AuthManager()
+    @StateObject private var postManager = PostManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authManager.isAuthenticated {
+                MainTabView()
+                    .environmentObject(authManager)
+            } else {
+                AuthView()
+                    .environmentObject(authManager)
+                    .environmentObject(postManager)
+            }
         }
     }
+
 }
