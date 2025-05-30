@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AuthView: View {
+    @EnvironmentObject var session: UserSession
     @EnvironmentObject var authManager: AuthManager
     @State private var email = ""
     @State private var password = ""
@@ -22,7 +23,7 @@ struct AuthView: View {
                     .frame(width: 60, height: 60)
                     .foregroundColor(Color(red: 0.26, green: 0.29, blue: 0.72))
                     .offset(x: -80, y:-305)
-                Text("Roamly")
+                Text("Traveler")
                     .font(Font.custom("Poppins", size: 43).weight(.medium))
                     .foregroundColor(Color(red: 0.26, green: 0.29, blue: 0.72))
                     .offset(x: 36.50, y: -305.50)
@@ -116,10 +117,11 @@ struct AuthView: View {
                             errorMessage = "Пожалуйста, заполните все поля"
                             return
                         }
-                        login(email: email, password: password) { success in
+                        login(email: email, password: password) { userID in
                             DispatchQueue.main.async {
-                                if success {
-                                    authManager.logIn()
+                                if let userID = userID {
+                                    session.userID = userID
+                                    authManager.logIn(userID: userID)
                                     email = ""
                                     password = ""
                                     errorMessage = nil
@@ -158,9 +160,9 @@ struct AuthView: View {
         }
     }
     
-    func login(email: String, password: String, completion: @escaping (Bool) -> Void) {
+    func login(email: String, password: String, completion: @escaping (Int?) -> Void) {
         guard let url = URL(string: "http://192.168.0.105:8080/auth/login") else {
-            completion(false)
+            completion(nil)
             return
         }
         
@@ -175,11 +177,17 @@ struct AuthView: View {
         request.httpBody = try? JSONEncoder().encode(payload)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let httpResponse = response as? HTTPURLResponse else {
-                completion(false)
+            guard let data = data else {
+                completion(nil)
                 return
             }
-            completion(httpResponse.statusCode == 200)
+            
+            if let userID = try? JSONDecoder().decode(Int.self, from: data) {
+                completion(userID)
+            } else {
+                completion(nil)
+            }
+//            completion(httpResponse.statusCode == 200)
         }.resume()
     }
 }

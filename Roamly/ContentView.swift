@@ -7,24 +7,6 @@
 
 import SwiftUI
 
-//struct ContentView: View {
-//    var body: some View {
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
-//        }
-//        .padding()
-//    }
-//}
-//
-//#Preview {
-//    ProfileView()
-//}
-
-import SwiftUI
-
 struct ContentView: View {
   var body: some View {
     ZStack() {
@@ -124,7 +106,7 @@ struct ContentView: View {
           .offset(x: 9.61, y: 273.91)
       }
         Group {
-        Text("Roamly")
+        Text("Traveler")
           .font(Font.custom("Poppins", size: 43).weight(.medium))
           .foregroundColor(Color(red: 0.26, green: 0.29, blue: 0.72))
           .offset(x: 36.50, y: -305.50)

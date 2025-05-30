@@ -9,6 +9,7 @@ import SwiftUI
 import _MapKit_SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject var session: UserSession
     @EnvironmentObject var authManager: AuthManager
     @StateObject var postManager = PostManager()
     @StateObject var userManager = UserManager()
@@ -158,6 +159,9 @@ struct ProfileView: View {
                                     if !post.title.isEmpty {
                                         Text(post.title)
                                             .font(.headline)
+                                    } else {
+                                        Text("Установить статус")
+                                            .font(.headline)
                                     }
                                     
                                     // Дата
@@ -247,8 +251,10 @@ struct ProfileView: View {
         }
         .onAppear {
             // Загружаем посты
-            postManager.fetchPosts(userID: 1)
-            userManager.fetchUser(userID: 1)
+            if let id = session.userID {
+                postManager.fetchPosts(userID: id)
+                userManager.fetchUser(userID: id)
+            }
         }
         .overlay(
             Group {

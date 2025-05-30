@@ -8,6 +8,5 @@
 import Foundation
 
 struct Photo: Decodable {
-//    var user_id: Int64
     var media: String
 }
