@@ -13,6 +13,7 @@ struct FeedView: View {
     @StateObject var feedManager = FeedManager()
     @State private var selectedImage: String? = nil
     @State private var showFullScreenImage = false
+    @State private var cityNames: [UUID: String] = [:]
     
     var body: some View {
         NavigationView {
@@ -58,10 +59,21 @@ struct FeedView: View {
                                     Text(post.username)
                                         .font(.subheadline).bold()
                                     if post.coordinate.latitude != 0 && post.coordinate.longitude != 0 {
-                                        Text("Казань") // или post.locationName
+                                        Text(cityNames[post.id] ?? "Загрузка...")
                                             .font(.caption)
                                             .foregroundColor(.gray)
                                     }
+                                }
+                                .onAppear {
+                                    if post.coordinate.latitude != 0 && post.coordinate.longitude != 0 && cityNames[post.id] == nil {
+                                            feedManager.getCityName(from: post.coordinate) { city in
+                                                if let city = city {
+                                                    DispatchQueue.main.async {
+                                                        cityNames[post.id] = city
+                                                    }
+                                                }
+                                            }
+                                        }
                                 }
                                 Spacer()
                             }

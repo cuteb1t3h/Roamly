@@ -57,4 +57,15 @@ class FeedManager: ObservableObject {
             }
         }.resume()
     }
+    
+    func getCityName(from coordinate: CLLocationCoordinate2D, completion: @escaping (String?) -> Void) {
+        let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        CLGeocoder().reverseGeocodeLocation(location) { placemarks, error in
+            if let placemark = placemarks?.first {
+                completion(placemark.locality ?? placemark.administrativeArea ?? placemark.country)
+            } else {
+                completion(nil)
+            }
+        }
+    }
 }
