@@ -187,7 +187,6 @@ struct AuthView: View {
             } else {
                 completion(nil)
             }
-//            completion(httpResponse.statusCode == 200)
         }.resume()
     }
 }

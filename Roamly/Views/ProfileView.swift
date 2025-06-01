@@ -12,10 +12,12 @@ struct ProfileView: View {
     @EnvironmentObject var session: UserSession
     @EnvironmentObject var authManager: AuthManager
     @StateObject var postManager = PostManager()
+    @StateObject var feedManager = FeedManager()
     @StateObject var userManager = UserManager()
     @State private var isMenuOpen = false
     @State private var selectedImageData: Data? = nil
     @State private var showFullScreenImage = false
+    @State private var cityNames: [UUID: String] = [:]
     
     var body: some View {
         ZStack {
@@ -116,10 +118,21 @@ struct ProfileView: View {
                                             Text(post.username)
                                                 .font(.subheadline).bold()
                                             if post.coordinate.latitude != 0 && post.coordinate.longitude != 0 {
-                                                Text("Москва") // или post.locationName
+                                                Text(cityNames[post.id] ?? "Загрузка...")
                                                     .font(.caption)
                                                     .foregroundColor(.gray)
                                             }
+                                        }
+                                        .onAppear {
+                                            if post.coordinate.latitude != 0 && post.coordinate.longitude != 0 && cityNames[post.id] == nil {
+                                                    feedManager.getCityName(from: post.coordinate) { city in
+                                                        if let city = city {
+                                                            DispatchQueue.main.async {
+                                                                cityNames[post.id] = city
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                         }
                                         Spacer()
                                     }
@@ -240,7 +253,7 @@ struct ProfileView: View {
                         
                         Spacer()
                     }
-                    .frame(width: 250)
+                    .frame(width: 250, height: 250)
                     .background(Color(red: 0.26, green: 0.29, blue: 0.72))
                     .cornerRadius(15)
                     .offset(x: isMenuOpen ? 0 : -geometry.size.width)
