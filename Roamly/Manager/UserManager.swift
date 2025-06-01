@@ -21,7 +21,7 @@ class UserManager: ObservableObject {
     @Published var avatarURL: String? = nil
     
     func fetchUser(userID: Int) {
-        guard let url = URL(string: "http://192.168.0.105:8080/users/\(userID)") else { return }
+        guard let url = URL(string: "http://192.168.31.170:8080/users/\(userID)") else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data, error == nil else {
@@ -48,7 +48,7 @@ class UserManager: ObservableObject {
     }
     
     func fetchUserAvatar(userID: Int) {
-        guard let url = URL(string: "http://192.168.0.105:8080/users/\(userID)/avatar") else { return }
+        guard let url = URL(string: "http://192.168.31.170:8080/users/\(userID)/avatar") else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil,

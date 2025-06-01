@@ -27,7 +27,7 @@ class PostManager: ObservableObject {
     }
     
     func fetchPosts(userID: Int) {
-        guard let url = URL(string: "http://192.168.0.105:8080/posts/\(userID)") else { return }
+        guard let url = URL(string: "http://192.168.31.170:8080/posts/\(userID)") else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {

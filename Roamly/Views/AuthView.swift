@@ -161,7 +161,7 @@ struct AuthView: View {
     }
     
     func login(email: String, password: String, completion: @escaping (Int?) -> Void) {
-        guard let url = URL(string: "http://192.168.0.105:8080/auth/login") else {
+        guard let url = URL(string: "http://192.168.31.170:8080/auth/login") else {
             completion(nil)
             return
         }

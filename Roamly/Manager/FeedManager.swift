@@ -27,7 +27,7 @@ class FeedManager: ObservableObject {
     }
     
     func fetchFeedPosts(userID: Int) {
-        guard let url = URL(string: "http://192.168.0.105:8080/users/feed/\(userID)") else { return }
+        guard let url = URL(string: "http://192.168.31.170:8080/users/feed/\(userID)") else { return }
         print(userID)
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {

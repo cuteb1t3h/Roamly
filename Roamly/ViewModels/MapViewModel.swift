@@ -26,9 +26,9 @@ class MapViewModel: ObservableObject {
     func loadLocationsFromPosts() {
         // Здесь можно загрузить реальные посты из модели
         locations = [
-            PostLocation(name: "Париж", coordinate: CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522), date: Date(timeIntervalSinceNow: -86400 * 5)),
-            PostLocation(name: "Франкфурт", coordinate: CLLocationCoordinate2D(latitude: 50.1109, longitude: 8.6821), date: Date(timeIntervalSinceNow: -86400 * 4)),
-            PostLocation(name: "Пиза", coordinate: CLLocationCoordinate2D(latitude: 43.7085, longitude: 10.4036), date: Date(timeIntervalSinceNow: -86400 * 4)),
+            PostLocation(name: "Кельн", coordinate: CLLocationCoordinate2D(latitude: 50.9333, longitude:  6.95), date: Date(timeIntervalSinceNow: -86400 * 5)),
+            PostLocation(name: "София", coordinate: CLLocationCoordinate2D(latitude: 42.697838, longitude: 23.314498), date: Date(timeIntervalSinceNow: -86400 * 4)),
+            PostLocation(name: "Кисловодск", coordinate: CLLocationCoordinate2D(latitude: 43.9133, longitude: 42.7208), date: Date(timeIntervalSinceNow: -86400 * 4)),
 //            PostLocation(name: "Москва", coordinate: CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6173), date: Date(timeIntervalSinceNow: -86400 * 3)),
         ]
     }

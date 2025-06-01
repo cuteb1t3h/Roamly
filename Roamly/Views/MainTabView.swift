@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @EnvironmentObject var session: UserSession
     var body: some View {
         TabView {
             MapView()
+//                .environmentObject(authManager)
+                    .environmentObject(session)
                 .tabItem {
                     Image(systemName: "map")
                     Text("Карта")

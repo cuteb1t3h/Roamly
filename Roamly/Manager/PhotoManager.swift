@@ -11,7 +11,7 @@ class PhotoManager: ObservableObject {
     @Published var photos: [Photo] = []
 
     func fetchPhotos(userID: Int) {
-        guard let url = URL(string: "http://192.168.0.106:8080/photos/\(userID)") else { return }
+        guard let url = URL(string: "http://192.168.31.170:8080/photos/\(userID)") else { return }
 
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {

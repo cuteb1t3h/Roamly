@@ -131,11 +131,11 @@ struct RegisterView: View {
         
         errorMessage = nil
         
-        let baseURL = "http://192.168.0.106:8080/register"
+        let baseURL = "http://192.168.31.170:8080/register"
         guard var components = URLComponents(string: baseURL) else {
             errorMessage = "Неверный URL"
             return
-        }
+        } 
         
         components.queryItems = [
             URLQueryItem(name: "email", value: email),
